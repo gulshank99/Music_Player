@@ -37,4 +37,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     // adding dependencies for pop up for permission
     implementation 'com.karumi:dexter:6.2.3'
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
 }
