@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context=".Songs">
+
+    <ImageView
+        android:id="@+id/bac"
+        android:layout_width="wrap_content"
+        android:layout_height="980dp"
+        android:background="#070707"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bac" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="396dp"
+        android:layout_marginBottom="119dp"
+        android:contentDescription="Name of Song"
+        android:text="Name of Song"
+        android:textColor="#DF0DB2"
+        android:textColorHint="#F42EAC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal"
+        android:scrollbarSize="15dp"
+        app:barrierMargin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="110dp"
+            android:layout_height="189dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/todo3"
+            app:srcCompat="@drawable/previous" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="110dp"
+            android:layout_height="189dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/todo4"
+            app:srcCompat="@drawable/next" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="328dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
