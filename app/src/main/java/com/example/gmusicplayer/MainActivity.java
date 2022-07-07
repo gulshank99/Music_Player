@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements AdapterClass.Oncl
                 .withListener(new PermissionListener() {
                     @Override
                     public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
-
+                        Toast.makeText(MainActivity.this, "Please wait while we are fetching your songs ", Toast.LENGTH_LONG).show();
                         // create Array  and put all songs there
                         list = fetchSong(Environment.getExternalStorageDirectory());
                         String[] items = new String[list.size()];
