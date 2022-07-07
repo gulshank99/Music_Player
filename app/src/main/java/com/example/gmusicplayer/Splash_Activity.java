@@ -13,6 +13,7 @@ public class Splash_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
         imageView=findViewById(R.id.imageView);
 
 
@@ -29,7 +30,7 @@ public class Splash_Activity extends AppCompatActivity {
                 finally{
                     Intent intent = new Intent(Splash_Activity.this,MainActivity.class);
                     startActivity(intent);
-                  //  finish();
+                     finish();
                 }
             }
         };    thread.start();
@@ -42,5 +43,10 @@ public class Splash_Activity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

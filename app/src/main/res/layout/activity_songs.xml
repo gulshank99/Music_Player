@@ -25,7 +25,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:contentDescription="@string/name_of_songs"
+        android:maxLength="35"
         android:text="@string/name_of_song3"
         android:textColor="#E419B7"
         android:textColorHint="#F42EAC"
@@ -36,11 +39,11 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.127" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
@@ -57,15 +60,15 @@
 
         <ImageView
             android:id="@+id/previous"
-            android:layout_width="128dp"
-            android:layout_height="120dp"
+            android:layout_width="110dp"
+            android:layout_height="87dp"
             android:layout_weight="0"
             android:contentDescription="@string/todo3"
             app:srcCompat="@drawable/previous" />
 
         <ImageView
             android:id="@+id/play"
-            android:layout_width="115dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             android:layout_weight="0"
             android:contentDescription="@string/todo112"
@@ -73,7 +76,7 @@
 
         <ImageView
             android:id="@+id/next"
-            android:layout_width="119dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             android:contentDescription="@string/todo4"
             app:srcCompat="@drawable/next" />
@@ -88,7 +91,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
