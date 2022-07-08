@@ -103,6 +103,7 @@ public class Songs extends AppCompatActivity {
                 if (mediaPlayer.isPlaying()) {
                     play.setImageResource(R.drawable.play);
                     mediaPlayer.pause();
+
                 } else {
                     play.setImageResource(R.drawable.pause);
                     mediaPlayer.start();
