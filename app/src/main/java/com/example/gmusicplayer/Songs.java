@@ -48,8 +48,7 @@ public class Songs extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
 
         songs = (ArrayList) bundle.getParcelableArrayList("list");
-       // textContent = intent.getStringExtra("currentSong");
-
+        textContent = intent.getStringExtra("currentSong");
         textView.setText(textContent);
         textView.setSelected(true);       // for horizontal moving of text
 
