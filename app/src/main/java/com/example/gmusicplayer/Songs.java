@@ -154,8 +154,8 @@ public class Songs extends AppCompatActivity {
                     position = 0;
                 }
                 Uri uri = Uri.parse(songs.get(position).toString());
-                mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
 
+                mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
                 mediaPlayer.start();
 
                 play.setImageResource(R.drawable.pause);
