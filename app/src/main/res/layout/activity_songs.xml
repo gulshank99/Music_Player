@@ -30,6 +30,12 @@
         android:contentDescription="@string/name_of_songs"
         android:maxLength="35"
         android:text="@string/name_of_song3"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
+
         android:textColor="#E419B7"
         android:textColorHint="#F42EAC"
         android:textSize="24sp"

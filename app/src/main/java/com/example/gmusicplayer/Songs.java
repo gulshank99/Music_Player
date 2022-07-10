@@ -48,8 +48,13 @@ public class Songs extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
 
         songs = (ArrayList) bundle.getParcelableArrayList("list");
-        textContent = intent.getStringExtra("currentSong");
+       // textContent = intent.getStringExtra("currentSong");
+        textContent = songs.get(position).getName().toString();
         textView.setText(textContent);
+        textView.setSelected(true);       // for horizontal moving of text
+
+       // textContent = songs.get(position).getName().toString();
+
 
         // to play song
         position = intent.getIntExtra("position", 0);
@@ -88,7 +93,7 @@ public class Songs extends AppCompatActivity {
                     while (currentPosition < mediaPlayer.getDuration()) {
                         currentPosition = mediaPlayer.getCurrentPosition();
                         seekBar.setProgress(currentPosition);
-                        sleep(800);
+                        sleep(200);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -129,8 +134,10 @@ public class Songs extends AppCompatActivity {
                 play.setImageResource(R.drawable.pause);
 
 
-                // Seek bar
+                // Setting the Seek bar to max of media player
                 seekBar.setMax(mediaPlayer.getDuration());
+
+                // To update content in text
                 textContent = songs.get(position).getName().toString();
                 textView.setText(textContent);
 
@@ -155,7 +162,7 @@ public class Songs extends AppCompatActivity {
                 play.setImageResource(R.drawable.pause);
                 // Seek bar
                 seekBar.setMax(mediaPlayer.getDuration());
-
+                  // To update content in text
                 textContent = songs.get(position).getName().toString();
                 textView.setText(textContent);
 
