@@ -53,7 +53,8 @@ public class Songs extends AppCompatActivity {
         textView.setSelected(true);       // for horizontal moving of text
 
        // textContent = songs.get(position).getName().toString();
-
+        // textContent = songs.get(position).getName().toString();
+        // textContent = songs.get(position).getName().toString();
 
         // to play song
         position = intent.getIntExtra("position", 0);
